@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movie_details>
+
+<movie>
+
+<title>God's not dead</title>
+<year>2014</year>
+<director> Harold Cronk</director>
+<genre> Drama </genre>
+<rating> 4.5 </rating>
+<image>images/godsnotdead.jpg</image>
+<url>https://www.imdb.com/title/tt2528814/</url>
+</movie>
+
+<movie>
+
+<title>War Room</title>
+<year>2015</year>
+<director> Alex Kendrick</director>
+<genre> Drama </genre>
+<rating> 6.5 </rating>
+<image>images/war_room.jpg</image>
+<url>https://www.imdb.com/title/tt3832914/</url>
+</movie>
+
+<movie>
+<title> The Shawshank Redemption </title>
+<year> 1994 </year>
+<director> Frank Darabont </director>
+<genre> Drama </genre>
+<rating> 9.3 </rating>
+<image>images/shawshank.jpg</image>
+<url>https://www.imdb.com/title/tt3832914/</url>
+</movie>
+
+<movie>
+<title> Inception </title>
+<year> 2010 </year>
+<director> Christopher Nolan </director>
+<genre> Sci-Fi </genre>
+<rating> 8.8 </rating>
+<image>images/inception.jpg</image>
+<url>https://www.imdb.com/title/tt1375666/</url>
+</movie>
+
+<movie>
+<title> Spiderman : No Way Home </title>
+<year> 2021 </year>
+<director> Jon Watts </director>
+<genre> Fiction</genre>
+<rating> 8.9</rating>
+<image>images/spiderman.jpg</image>
+<url>https://www.imdb.com/title/tt10872600/</url>
+</movie>
+
+<movie>
+  <title> The Matrix </title>
+  <year> 1999 </year>
+  <director> The Wachowskis </director>
+  <genre> Sci-Fi </genre>
+  <rating> 8.7 </rating>
+  <image>images/matrix.jpg</image>
+  <url>https://www.imdb.com/title/tt0133093/</url>
+</movie>
+
+<movie>
+  <title> Fight Club </title>
+  <year> 1999 </year>
+  <director> David Fincher </director>
+  <genre> Drama, Thriller </genre>
+  <rating> 8.8 </rating>
+  <image>images/fightclub.jpg</image>
+  <url>https://www.imdb.com/title/tt0137523/</url>
+</movie>
+
+<movie>
+  <title> The Dark Knight </title>
+  <year> 2008 </year>
+  <director> Christopher Nolan </director>
+  <genre> Action, Crime </genre>
+  <rating> 9.0 </rating>
+  <image>images/darknight.jpg</image>
+  <url>https://www.imdb.com/title/tt0468569/</url>
+</movie>
+
+<movie>
+  <title> The Godfather </title>
+  <year> 1972 </year>
+  <director> Francis Ford Coppola </director>
+  <genre> Crime, Drama </genre>
+  <rating> 9.2 </rating>
+  <image>images/godfather.jpg</image>
+  <url>https://www.imdb.com/title/tt0068646/</url>
+</movie>
+
+<movie>
+  <title> Forrest Gump </title>
+  <year> 1994 </year>
+  <director> Robert Zemeckis </director>
+  <genre> Drama, Romance </genre>
+  <rating> 8.8 </rating>
+  <image>images/forestgump.jpg</image>
+  <url>https://www.imdb.com/title/tt0109830/</url>
+</movie>
+
+<movie>
+  <title> The Silence of the Lambs </title>
+  <year> 1991 </year>
+  <director> Jonathan Demme </director>
+  <genre> Crime, Drama, Thriller </genre>
+  <rating> 8.6 </rating>
+  <image>images/silenceofthelambs.jpg</image>
+  <url>https://www.imdb.com/title/tt0102926/</url>
+</movie>
+
+<movie>
+  <title> The Proposal </title>
+  <year> 2009 </year>
+  <director> Anne Fletcher </director>
+  <genre> Comedy, Drama, Romance </genre>
+  <rating> 6.7 </rating>
+  <image>images/proposal.jpg</image>
+  <url>https://www.imdb.com/title/tt1041829/</url>
+</movie>
+
+<movie>
+  <title> Fifty Shades of Grey </title>
+  <year> 2015 </year>
+  <director> Sam Taylor-Johnson </director>
+  <genre> Drama, Romance, Thriller </genre>
+  <rating> 4.2 </rating>
+  <image>images/50shades.jpg</image>
+  <url>https://www.imdb.com/title/tt2322441/</url>
+</movie>
+
+<movie>
+  <title> Ford v Ferrari </title>
+  <year> 2019 </year>
+  <director> James Mangold </director>
+  <genre> Action, Biography, Drama </genre>
+  <rating> 8.1 </rating>
+  <image>images/fordvferrari.jpg</image>
+  <url>https://www.imdb.com/title/tt1950186/</url>
+</movie>
+
+<movie>
+  <title> Die Hard </title>
+  <year> 1988 </year>
+  <director> John McTiernan </director>
+  <genre> Action, Thriller </genre>
+  <rating> 8.2 </rating>
+  <image>images/diehard.jpg</image>
+  <url>https://www.imdb.com/title/tt0095016/</url>
+</movie>
+
+<movie>
+  <title> Back to the Future </title>
+  <year> 1985 </year>
+  <director> Robert Zemeckis </director>
+  <genre> Adventure, Comedy, Sci-Fi </genre>
+  <rating> 8.5 </rating>
+  <image>images/backtothefuture.jpg</image>
+  <url>https://www.imdb.com/title/tt0088763/</url>
+</movie>
+
+<movie>
+  <title> The Wolf of Wall Street </title>
+  <year> 2013 </year>
+  <director> Martin Scorsese </director>
+  <genre> Biography, Comedy, Drama </genre>
+  <rating> 8.2 </rating>
+  <image>images/wolfofwallstreet.jpeg</image>
+  <url>https://www.imdb.com/title/tt0993846/</url>
+</movie>
+
+<movie>
+  <title> Avatar </title>
+  <year> 2009 </year>
+  <director> James Cameron </director>
+  <genre> Action, Adventure, Sci-Fi </genre>
+  <rating> 7.8 </rating>
+  <image>images/avatar.jpg</image>
+  <url>https://www.imdb.com/title/tt0499549/</url>
+</movie>
+
+<movie>
+  <title> Titanic </title>
+  <year> 1997 </year>
+  <director> James Cameron </director>
+  <genre> Drama, Romance </genre>
+  <rating> 7.8 </rating>
+  <image>images/titanic.jpg</image>
+  <url>https://www.imdb.com/title/tt0120338/</url>
+</movie>
+
+<movie>
+  <title> John Wick: Chapter 4 </title>
+  <year> 2023 </year>
+  <director> Chad Stahelski </director>
+  <genre> Action, Crime, Thriller </genre>
+  <rating> 7.9 </rating>
+  <image>images/johnwick4.jpeg</image>
+  <url>https://www.imdb.com/title/tt10366206/</url>
+</movie>
+
+</movie_details>

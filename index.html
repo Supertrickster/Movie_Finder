@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Search</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+  /* background-color: #f7f7f7; /* Add a light gray background color to the whole page 
+  background-image: linear-gradient(to bottom, #F5F5DC, #C9C4B5); */
+  background-image: url('images/1stimage.jpeg');
+
+
+    }
+    
+    #movie-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+    }
+    
+    .movie-item {
+      /*flex: 0 0 20%; /* add this to make each movie item take up 1/3 of the width */
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex; /* add this to make the image and text inline */
+      flex-wrap: wrap; /* add this to wrap the text around the image */
+    }
+    .movie-item .text-content {
+  flex-grow: 1; /* make the text take up the remaining space */
+  padding-left: 20px; /* add some padding to separate the image and text */
+  font-size: 1.2em;
+  padding: 20px;
+   color: #555;/* Change the text color to a darker gray */
+} 
+.movie-item .text-content h2 {
+  font-weight: bold;
+  margin-top: 0;
+  
+}
+
+.movie-item .text-content h2 i {
+  font-size: 1.2em;
+  margin-left: 10px;  
+  color: #666;
+}
+
+.movie-item .text-content p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.movie-item .text-content p i {
+  font-size: 1.2em;
+  margin-right: 10px;
+  color: #666;
+}
+
+.movie-item .text-content p i.fa-star {
+  color: #ffd700; /* golden color for rating stars */
+  
+}
+
+
+    .movie-item img {
+  width: 10vw; /* keep the image width */
+  height: 31vh; /* keep the image height */
+  margin: 10px; /* keep the image margin */
+  flex-shrink: 0; /* prevent the image from shrinking */
+  border-radius: 20px;
+  border: 2px solid #333; 
+}
+
+.movie-item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+    .movie-item:hover {
+      background-color: #f5f5f5;
+      transform: scale(1.05); /* increase the size by 10% */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow effect */
+      border-color: #337ab7;
+      border-radius: 10px;
+    }
+
+    .movie-item:hover .text-content {
+  font-size: 1.1em; /* increase the font size by 20% */
+  color: #337ab7; 
+
+}
+    
+    .movie-item h2 {
+      font-weight: bold;
+      margin-top: 0;
+    }
+    
+    .movie-item p {
+      margin-bottom: 10px;
+    }
+
+  .movie-item .text-content h2 a:link, .movie-item .text-content h2 a:visited {
+  color: #000; /* Change the color to black */
+  text-decoration: none; /* Remove the underline */
+}
+
+
+#search-bar {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+    
+    #search-btn {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    #search-btn:hover {
+      background-color: #3e8e41;
+    }
+
+  button.active {
+  font-weight: bold;
+}
+
+button.active::after {
+  content: ' ↑';
+  font-size: 12px;
+  vertical-align: super;
+}
+
+button.active.desc::after {
+  content: ' ↓';
+  font-size: 12px;
+  vertical-align: super;
+}
+    
+    #sort-by-year, #sort-by-rating, #title {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    #sort-by-year:hover, #sort-by-rating:hover, #title:hover {
+      background-color: #3e8e41;
+    }
+    #search-btn, #sort-by-year, #sort-by-rating {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left:10px;
+}
+#title{
+  margin-top: 20px;
+}
+a:hover{
+  text-decoration: none;
+}
+.margin1{
+  margin-bottom: 20px;
+}
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+           <a href="index2.html" id="title1"><h1 class="text-center mb-3" id="title"><strong>Movie Finder</strong></h1></a>
+                    <div class="input-group margin1">
+            <input id="search-bar" type="search" class="form-control" placeholder="Search for a movie...">
+            <div class="input-group-append">
+              <button id="search-btn" class="btn btn-primary">Search</button>
+              <button id="sort-by-year" class="btn btn-success">Sort by Year ↑</button>
+              <button id="sort-by-rating" class="btn btn-danger">Sort by Rating ↑</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul id="movie-list"></ul>
+      </div>
+    </div>
+    
+    <!-- Modal for movie details -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title" id="modalTitleH4"></h4>
+          </div>
+          <div class="modal-body" id="modalBodyDiv">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+
+  $(document).ready(function() {
+  let movies = [];
+
+  $.ajax({
+    type: "GET",
+    url: "moviedb.xml",
+    dataType: "xml",
+    success: function(xml) {
+      $(xml).find('movie').each(function() {
+        const title = $(this).find('title').text();
+        const year = $(this).find('year').text();
+        const director = $(this).find('director').text();
+        const genre = $(this).find('genre').text();
+        const rating = $(this).find('rating').text();
+        const image = $(this).find('image').text();
+        const url = $(this).find('url').text(); 
+        movies.push({ title, year, director, genre, rating, image,url });
+      });
+
+      // Sort movies by year (default)
+      movies.sort((a, b) => a.year - b.year);
+
+      updateMovieList(movies);
+    },
+    error: function() {
+      $('#movie-list').append('<li>Error loading movie data</li>');
+    }
+  });
+
+  // Search bar functionality
+  $('#search-btn').on('click', function() {
+    const searchTerm = $('#search-bar').val().trim();
+    if (searchTerm !== '') {
+      const filteredMovies = movies.filter(movie => movie.title.toLowerCase().includes(searchTerm.toLowerCase()));
+      updateMovieList(filteredMovies);
+    } else {
+      updateMovieList(movies);
+    }
+  });
+
+  // Sort by year button
+$('#sort-by-year').on('click', function() {
+  const isAscending = $(this).text().includes('↑');
+  if (isAscending) {
+    movies.sort((a, b) => b.year - a.year);
+    $(this).text('Sort by Year ↓');
+  } else {
+    movies.sort((a, b) => a.year - b.year);
+    $(this).text('Sort by Year ↑');
+  }
+  updateMovieList(movies);
+});
+
+// Sort by rating button
+$('#sort-by-rating').on('click', function() {
+  const isAscending = $(this).text().includes('↑');
+  if (isAscending) {
+    movies.sort((a, b) => b.rating - a.rating);
+    $(this).text('Sort by Rating ↓');
+  } else {
+    movies.sort((a, b) => a.rating - b.rating);
+    $(this).text('Sort by Rating ↑');
+  }
+  updateMovieList(movies);
+});
+
+  // Show movie details on click
+  $('#movie-list').on('click', '.movie-item', function() {
+    const movieTitle = $(this).find('h2').text();
+    const movie = movies.find(movie => movie.title === movieTitle);
+    if (movie) {
+      $('#modalTitleH4').text(movie.title);
+      $('#modalBodyDiv').html(`
+        <p>Year: ${movie.year}</p>
+        <p>Director: ${movie.director}</p>
+        <p>Genre: ${movie.genre}</p>
+        <p>Rating: ${movie.rating}</p>
+      `);
+      $('#myModal').modal('show');
+    }
+  });
+  function updateMovieList(movies) {
+  $('#movie-list').empty();
+  movies.forEach(movie => {
+    $('#movie-list').append(`
+      <li class="movie-item">
+        <img src="${movie.image}" alt="${movie.title}" />
+      <div class="text-content">
+      <h2><a href="${movie.url}" target="_blank">${movie.title}</a> <i class="fas fa-film"></i></h2>
+      <p><i class="fas fa-calendar"></i> Year: ${movie.year}</p>
+      <p><i class="fas fa-user"></i> Director: ${movie.director}</p>
+      <p><i class="fas fa-tag"></i> Genre: ${movie.genre}</p>
+      <p><i class="fas fa-star"></i> Rating: ${movie.rating}</p>
+    </div>
+      </li>
+    `);
+  });
+}
+
+
+});
+    </script>
+  </body>
+</html>
